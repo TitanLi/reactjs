@@ -13,6 +13,8 @@ class NameForm extends React.Component{
 
   handleChange(event){
     this.setState({value:event.target.value});
+    //if we wanted to enforce that names are written with all uppercase letters
+    // this.setState({value:event.target.value.toUpperCase()});
   }
 
   handleSubmit(event){
