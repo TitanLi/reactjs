@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import AppWelcome from './AppWelcome';
 import AppComment from './AppComment';
+import ClassClock from './ClassClock';
 import * as serviceWorker from './serviceWorker';
 
 function tick() {
@@ -33,6 +34,15 @@ ReactDOM.render(
     />,
     document.getElementById('comment')
 );
+
+function classClock() {
+    ReactDOM.render(
+        <ClassClock />,
+        document.getElementById('classClock')
+    );
+}
+
+setInterval(classClock, 1000);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
