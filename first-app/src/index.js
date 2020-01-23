@@ -8,6 +8,7 @@ import ClassClock from './ClassClock';
 import ActionLink from './ActionLink';
 import ToggleButton from './ToggleButton';
 import LoginControl from './LoginControl';
+import MapList from './MapList';
 import * as serviceWorker from './serviceWorker';
 
 function tick() {
@@ -60,6 +61,11 @@ ReactDOM.render(
 ReactDOM.render(
     <LoginControl  isLoggedIn={true}/>,
     document.getElementById('loginControl')
+)
+
+ReactDOM.render(
+    <MapList number={[1, 2, 3, 4]}/>,
+    document.getElementById('mapList')
 )
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
