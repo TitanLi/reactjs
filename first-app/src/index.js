@@ -5,6 +5,9 @@ import App from './App';
 import AppWelcome from './AppWelcome';
 import AppComment from './AppComment';
 import ClassClock from './ClassClock';
+import ActionLink from './ActionLink';
+import ToggleButton from './ToggleButton';
+import LoginControl from './LoginControl';
 import * as serviceWorker from './serviceWorker';
 
 function tick() {
@@ -44,6 +47,20 @@ function classClock() {
 
 setInterval(classClock, 1000);
 
+ReactDOM.render(
+    <ActionLink />,
+    document.getElementById('actionLink')
+)
+
+ReactDOM.render(
+    <ToggleButton />,
+    document.getElementById('toggleButton')
+)
+
+ReactDOM.render(
+    <LoginControl  isLoggedIn={true}/>,
+    document.getElementById('loginControl')
+)
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
