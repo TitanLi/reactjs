@@ -9,6 +9,7 @@ import ActionLink from './ActionLink';
 import ToggleButton from './ToggleButton';
 import LoginControl from './LoginControl';
 import MapList from './MapList';
+import Form from './Form';
 import * as serviceWorker from './serviceWorker';
 
 function tick() {
@@ -66,6 +67,11 @@ ReactDOM.render(
 ReactDOM.render(
     <MapList number={[1, 2, 3, 4]}/>,
     document.getElementById('mapList')
+)
+
+ReactDOM.render(
+    <Form/>,
+    document.getElementById('form')
 )
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
