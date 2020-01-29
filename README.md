@@ -1,4 +1,6 @@
-# reactjs
+# ReactJS
+## 官方教學
+[https://zh-hant.reactjs.org/docs/hello-world.html](https://zh-hant.reactjs.org/docs/hello-world.html)
 
 ## 安裝
 ```
