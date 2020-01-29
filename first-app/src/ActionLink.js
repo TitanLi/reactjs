@@ -9,9 +9,9 @@ function ActionLink() {
 
     return (
         // onClick function name
-        <a href="#" onClick={handleClick}>
+        <a href="https://github.com" onClick={handleClick}>
             Click me
-      </a>
+        </a>
     );
 }
 
