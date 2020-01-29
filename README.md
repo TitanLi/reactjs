@@ -2,6 +2,9 @@
 ## 官方教學
 [https://zh-hant.reactjs.org/docs/hello-world.html](https://zh-hant.reactjs.org/docs/hello-world.html)
 
+## create-react-app
+[Create React App](https://github.com/facebookincubator/create-react-app)
+
 ## 安裝
 ```
 $npm install -g create-react-app
