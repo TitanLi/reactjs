@@ -125,3 +125,31 @@ handleClick(data) {
     {this.state.isToggleOn ? 'ON' : 'OFF'}
 </button>
 ```
+### 前端API技巧
+```javascript
+setInterval(
+    function () {
+        // console.log(this.state.selectMac);
+        fetch(`http://${window.location.hostname}:30001/query/${this.state.selectMac}`, {
+            method: 'GET',
+                headers: {
+                    'Access-Control-Allow-Origin': '*'
+                }
+            })
+            .then(res => res.json())
+            .then(
+                (data) => {
+                    this.setState({
+                        deviceInfo: data
+                    });
+                },
+                (error) => {
+                    console.log(error)
+                    this.setState({
+                        deviceInfo: []
+                    });
+                }
+            )
+    }.bind(this), 1000
+);  
+```
