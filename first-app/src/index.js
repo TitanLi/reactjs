@@ -10,13 +10,14 @@ import ToggleButton from './ToggleButton';
 import LoginControl from './LoginControl';
 import MapList from './MapList';
 import Form from './Form';
-// import Dashboard from './material/Dashboard';
+import Dashboard from './material/Dashboard';
 import TextareaAPP from './TextareaAPP';
 import SelectApp from './SelectApp';
 import InputApp from './InputApp';
 import Calculator from './AdvancedState/Calculator';
 import WelcomeDialog from './propsChildren/WelcomeDialog';
 import MulitComponent from './mulitComponent/MulitComponent';
+import ButtonList from './ButtonList/ButtonList';
 import * as serviceWorker from './serviceWorker';
 
 function tick() {
@@ -114,6 +115,11 @@ ReactDOM.render(
 ReactDOM.render(
     <MulitComponent/>,
     document.getElementById('mulit-component')
+)
+
+ReactDOM.render(
+    <ButtonList/>,
+    document.getElementById('button-list')
 )
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
